@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: white;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+#yesBtn {
+  background: #ffeb3b;
+  color: #000;
+}
+
+#noBtn {
+  background: white;
+  color: #ff4081;
+  position: absolute;
+}
+
+.video-container {
+  display: none;
+}
+
+video {
+  width: 90%;
+  max-width: 500px;
+  border-radius: 15px;
+}
+
+/* Fade animation */
+.fade-out {
+  animation: fadeOut 2.5s forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
